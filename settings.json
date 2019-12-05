@@ -1,0 +1,119 @@
+{
+  //窗口：缩放级别调整窗口的缩放级别。原始大小为0，高于（例如1）或低于（例如-1）的每个增量代表放大或缩小20％。您也可以输入小数点，以更精细的粒度调整缩放级别。
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "material-icon-theme",
+  //字体大小控制响应预览中使用的字体大小（以像素为单位）
+  "rest-client.fontSize": 12,
+  //关联配置文件与语言的关联（例如“ * .extension”：“ html”）。这些优先于安装的语言的默认关联。
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.pcss": "postcss"
+  },
+  // 拼写 插件的语言
+  "cSpell.language": "en",
+  //包括语言启用默认情况下不支持的语言的Emmet缩写。在此语言和emmet支持的语言之间添加映射。例如：{“ vue-html”：“ html”，“ javascript”：“ javascriptreact”}
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  //启用智能提交 在没有分段更改时，提交所有更改。
+  "git.enableSmartCommit": true,
+  //已启用启用/禁用导航面包屑
+  "breadcrumbs.enabled": true,
+  //禁用vscode内容策略（如果从URL加载则为必需）
+  "vscode_custom_css.policy": true,
+  //在VS Code中重命名或移动文件时，启用/禁用导入路径的自动更新。需要在工作区中使用TypeScript 2.9或更高版本。
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  //控制显示建议列表时如何预选择建议。
+  "editor.suggestSelection": "first",
+  //自动获取启用后，将自动从当前Git存储库的默认远程获取提交。
+  "git.autofetch": true,
+  //(编辑器)字体大小控制字体大小（以像素为单位
+  "editor.fontSize": 14,
+  //验证：模板使用eslint-plugin-vue验证<template>中的vue-html
+  "vetur.validation.template": false,
+  //启动编辑器如果在上一个会话中未还原任何编辑器，则控制启动时显示哪个编辑器。
+  "workbench.startupEditor": "welcomePage",
+  //制表符大小制表符等于的空格数。启用“编辑器：检测缩进”时，将根据文件内容覆盖此设置。
+  "editor.tabSize": 2,
+  //保存时自动修复打开或关闭保存时自动修复。   // For ESLint
+  "eslint.autoFixOnSave": true,
+  // #每次保存的时候自动格式化
+  "editor.formatOnSave": true,
+  //控制是否为JavaScript文件启用eslint
+  "eslint.enable": true,
+  //始终显示状态始终显示ESlint状态栏项目
+  "eslint.alwaysShowStatus": true,
+  //验证应由ESLint验证的语言ID数组
+  "eslint.validate": [
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  //选项eslint选项对象提供从命令行执行时通常传递给eslint的args（请参阅http://eslint.org/docs/developer-guide/nodejs-api#cliengine）。
+  "eslint.options": {
+    "configFile": ".eslintrc.js"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //您可以为TSLint或ESLint启用“保存时自动修复”，并且仍然具有格式和快速修复功能：
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  //  #使用带引号替代双引号
+  // "prettier.singleQuote": true,
+  //定义在打开和关闭模板字符串大括号之前的空间处理。
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  //在同步git仓库之前进行确认。
+  "git.confirmSync": true,
+  //: Disable Auto Config默认在启动时会自动相关文件关联的配置项，配置成功后会将此配置自动设置成 true，避免下次启动再重新配置
+  "minapp-vscode.disableAutoConfig": true,
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml"
+  ],
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true
+  }
+  // "[typescriptreact]": {
+  //     "editor.defaultFormatter": "vscode.typescript-language-features"
+  // },
+  //workbench.settings.editor
+}
